@@ -56,11 +56,11 @@ public class Blog {
         this.content = content;
     }
 
-    public Date getPubdate() {
+    public Date getPubDate() {
         return pubdate;
     }
 
-    public void setPubdate(Date pubdate) {
+    public void setPubDate(Date pubdate) {
         this.pubdate = pubdate;
     }
 

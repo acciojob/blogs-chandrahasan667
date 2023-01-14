@@ -4,7 +4,6 @@ import com.driver.models.Blog;
 import com.driver.models.Image;
 import com.driver.models.User;
 import com.driver.repositories.BlogRepository;
-import com.driver.repositories.ImageRepository;
 import com.driver.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,9 +36,9 @@ public class BlogService {
 
         User user  = userRepository1.findById(userId).get();
 
-        List<Blog> result =user.getBlogList();
-        result.add(blog);
-        user.setBlogList(result);
+        List<Blog> res =user.getBlogList();
+        res.add(blog);
+        user.setBlogList(res);
         blogRepository1.save(blog);
         userRepository1.save(user);
 
